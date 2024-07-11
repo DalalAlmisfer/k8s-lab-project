@@ -4,11 +4,11 @@ metadata:
   name: wordpress-ingress
 spec:
   rules:
-    - host: dalal.kubes.fun
+    - host: test.kubes.fun
       http:
         paths:
           - pathType: Prefix
-            path: /
+            path: /dalal
             backend:
               service:
                 name: wordpress
