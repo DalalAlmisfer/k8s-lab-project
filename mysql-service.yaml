@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql
-  namespace: dalal
+  name: wordpress-mysql
   labels:
     app: wordpress
 spec:
@@ -11,4 +10,4 @@ spec:
   selector:
     app: wordpress
     tier: mysql
-
+  clusterIP: None
